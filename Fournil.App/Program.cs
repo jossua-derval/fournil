@@ -2,7 +2,7 @@
 using Fournil.App.Services;
 const string CheminFichier = "produits.json";
 
-List<Produit> produits = StockageJson.Charger("produits.json");
+List<Produit> produits = StockageJson.Charger(CheminFichier);
 
 List<string> categoriesAutorisees = new List<string> { "Pain", "Viennoiserie", "Pâtisserie" };
 
